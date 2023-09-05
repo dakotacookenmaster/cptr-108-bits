@@ -1,0 +1,132 @@
+[
+    {
+        "title": "Problem #1",
+        "question": "Convert the decimal value 10 to binary.",
+        "answer": "1010"
+    },
+    {
+        "title": "Problem #2",
+        "question": "Convert the hexadecimal value 2F to binary.",
+        "answer": "101111"
+    },
+    {
+        "title": "Problem #3",
+        "question": "Find the binary representation of the ASCII character 'B'.",
+        "answer": "1000010"
+    },
+    {
+        "title": "Problem #4",
+        "question": "Convert the decimal value 29 to binary.",
+        "answer": "11101"
+    },
+    {
+        "title": "Problem #5",
+        "question": "Convert the hexadecimal value 1E to binary.",
+        "answer": "11110"
+    },
+    {
+        "title": "Problem #6",
+        "question": "Find the binary representation of the ASCII character 'X'.",
+        "answer": "1011000"
+    },
+    {
+        "title": "Problem #7",
+        "question": "Find the binary representation of the ASCII character 'a'.",
+        "answer": "1100001"
+    },
+    {
+        "title": "Problem #8",
+        "question": "Convert the hexadecimal value 3A to binary.",
+        "answer": "111010"
+    },
+    {
+        "title": "Problem #9",
+        "question": "Convert the decimal value 53 to binary.",
+        "answer": "110101"
+    },
+    {
+        "title": "Problem #10",
+        "question": "Find the binary representation of the ASCII character 'Z'.",
+        "answer": "1011010"
+    },
+    {
+        "title": "Problem #11",
+        "question": "Convert the hexadecimal value 7C to binary.",
+        "answer": "1111100"
+    },
+    {
+        "title": "Problem #12",
+        "question": "Convert the decimal value 128 to binary.",
+        "answer": "10000000"
+    },
+    {
+        "title": "Problem #13",
+        "question": "Find the binary representation of the ASCII character 'p'.",
+        "answer": "1110000"
+    },
+    {
+        "title": "Problem #14",
+        "question": "Convert the hexadecimal value F0 to binary.",
+        "answer": "11110000"
+    },
+    {
+        "title": "Problem #15",
+        "question": "Find the binary representation of the ASCII character 'D'.",
+        "answer": "1000100"
+    },
+    {
+        "title": "Problem #16",
+        "question": "Convert the decimal value 37 to binary.",
+        "answer": "100101"
+    },
+    {
+        "title": "Problem #17",
+        "question": "Convert the hexadecimal value 4E to binary.",
+        "answer": "1001110"
+    },
+    {
+        "title": "Problem #18",
+        "question": "Find the binary representation of the ASCII character 'L'.",
+        "answer": "1001100"
+    },
+    {
+        "title": "Problem #19",
+        "question": "Convert the decimal value 93 to binary.",
+        "answer": "1011101"
+    },
+    {
+        "title": "Problem #20",
+        "question": "Find the binary representation of the ASCII character 'T'.",
+        "answer": "1010100"
+    },
+    {
+        "title": "Problem #21",
+        "question": "Convert the hexadecimal value A5 to binary.",
+        "answer": "10100101"
+    },
+    {
+        "title": "Problem #22",
+        "question": "Convert the decimal value 255 to binary.",
+        "answer": "11111111"
+    },
+    {
+        "title": "Problem #23",
+        "question": "Find the binary representation of the ASCII character 'H'.",
+        "answer": "1001000"
+    },
+    {
+        "title": "Problem #24",
+        "question": "Convert the hexadecimal value 3D to binary.",
+        "answer": "1111101"
+    },
+    {
+        "title": "Problem #25",
+        "question": "Convert the decimal value 63 to binary.",
+        "answer": "111111"
+    },
+    {
+        "title": "You're done!",
+        "question": "Get the TA to check you off.",
+        "answer": "1"
+    }
+]
