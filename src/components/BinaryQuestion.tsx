@@ -3,8 +3,8 @@ import React from "react"
 import "../App.css"
 import { enqueueSnackbar } from "notistack"
 
-const BinaryQuestion = (props: { data: { title: string, question: string, answer: string }, setCanMove: Function }) => {
-    const { data, setCanMove } = props
+const BinaryQuestion = (props: { data: { title: string, question: string, answer: string }, canMove: boolean, setCanMove: Function }) => {
+    const { data, setCanMove, canMove } = props
     const [state, setState] = React.useState({} as Record<string, string>)
 
     const handleChange = (event: any) => {
@@ -47,23 +47,30 @@ const BinaryQuestion = (props: { data: { title: string, question: string, answer
                 {
                     data.answer.split('').map((_, index) => {
                         return (
-                            <Switch sx={{
-                                '& .MuiSwitch-thumb': {
-                                    '&:before': {
-                                        content: "'" + (!state[`switch-${index}`] ? "0" : state[`switch-${index}`]) + "'",
-                                        color: "black",
-                                        position: "absolute",
-                                        width: "100%",
-                                        height: "100%",
-                                        left: "38%",
-                                        top: "17%",
+                            <Switch 
+                                sx={{
+                                    '& .MuiSwitch-thumb': {
+                                        '&:before': {
+                                            content: "'" + (!state[`switch-${index}`] ? "0" : state[`switch-${index}`]) + "'",
+                                            color: "black",
+                                            position: "absolute",
+                                            width: "100%",
+                                            height: "100%",
+                                            left: "38%",
+                                            top: "17%",
+                                        }
                                     }
-                                }
-                            }} key={`switch-${index}`} checked={state[`switch-${index}`] === "1"} name={`switch-${index}`} onChange={handleChange} />
+                                }} 
+                                key={`switch-${index}`} 
+                                checked={state[`switch-${index}`] === "1"} 
+                                name={`switch-${index}`} 
+                                onChange={handleChange}
+                                disabled={canMove}
+                            />
                         )
                     })
                 }
-                <Button variant="contained" onClick={checkAnswer}>Check Answer</Button>
+                <Button disabled={canMove} variant="contained" onClick={checkAnswer}>Check Answer</Button>
             </div>
         </div>
     )
