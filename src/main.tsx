@@ -20,7 +20,13 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <SnackbarProvider>
+    <SnackbarProvider 
+      anchorOrigin={{
+        vertical: "top",
+        horizontal: "center"
+      }}
+      dense={true}
+    >
       <RouterProvider router={router} />
     </SnackbarProvider>
   </React.StrictMode>,

@@ -24,10 +24,10 @@ export default function ProgressMobileStepper(props: ProgressMobileStepperProps)
             <h1 style={{textAlign: "center"}}>CPTR-108 Lab 3 Warmup - Binary Representation</h1>
             { React.cloneElement(props.steps[activeStep], { setCanMove, canMove} )}
             <MobileStepper
-                variant="progress"
                 steps={props.steps.length}
                 sx={{ background: "#3F3F3F", position: "absolute", bottom: "0px", width: "calc(100% - 16px)", overflow: "hidden" }}
                 position="static"
+                variant="dots"
                 activeStep={activeStep}
                 nextButton={
                     <Button variant={"contained"} onClick={handleNext} disabled={!canMove || activeStep === props.steps.length - 1}>
