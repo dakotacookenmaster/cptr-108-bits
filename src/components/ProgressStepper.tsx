@@ -4,7 +4,6 @@ import MobileStepper from '@mui/material/MobileStepper';
 import Button from '@mui/material/Button';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-import favicon from "/favicon.jpeg"
 
 type ProgressMobileStepperProps = {
     steps: React.ReactElement[]
