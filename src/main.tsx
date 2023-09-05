@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <ProgressStepper
       steps={data.map((datum, index) => {
-        return <BinaryQuestion key={`question-${index}`} data={datum} setCanMove={() => { }} />
+        return <BinaryQuestion key={`question-${index}`} data={datum} canMove={false} setCanMove={() => { }} />
       })} />
   }
 ])
