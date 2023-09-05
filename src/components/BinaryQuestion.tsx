@@ -42,7 +42,7 @@ const BinaryQuestion = (props: { data: { title: string, question: string, answer
     return (
         <div className={"question-wrapper"}>
             <h2 style={{margin: 0}}>{data.title}</h2>
-            <p style={{ fontSize: "20px" }}>{data.question}</p>
+            <p style={{ fontSize: "20px", textAlign: "center" }}>{data.question}</p>
             <div className={"switch-wrapper"}>
                 {
                     data.answer.split('').map((_, index) => {

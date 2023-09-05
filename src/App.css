@@ -1,3 +1,7 @@
+body {
+    margin-bottom: 53px;
+}
+
 .question-wrapper {
     display: flex;
     align-items: center;
