@@ -26,11 +26,11 @@ export default function ProgressMobileStepper(props: ProgressMobileStepperProps)
             <MobileStepper
                 variant="progress"
                 steps={props.steps.length}
-                sx={{ background: "#3F3F3F", position: "absolute", bottom: "0px", width: "100%" }}
+                sx={{ background: "#3F3F3F", position: "absolute", bottom: "0px", width: "calc(100% - 16px)", overflow: "hidden" }}
                 position="static"
                 activeStep={activeStep}
                 nextButton={
-                    <Button sx={{ marginRight: "10px" }} size="small" onClick={handleNext} disabled={!canMove || activeStep === props.steps.length - 1}>
+                    <Button variant={"contained"} onClick={handleNext} disabled={!canMove || activeStep === props.steps.length - 1}>
                         Next
                         {theme.direction === 'rtl' ? (
                             <KeyboardArrowLeft />
