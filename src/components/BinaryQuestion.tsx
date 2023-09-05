@@ -52,14 +52,16 @@ const BinaryQuestion = (props: { data: { title: string, question: string, answer
                                     '& .MuiSwitch-thumb': {
                                         '&:before': {
                                             content: "'" + (!state[`switch-${index}`] ? "0" : state[`switch-${index}`]) + "'",
-                                            color: "black",
+                                            color: `${state[`switch-${index}`] === "1" ? "white" : "black"}`,
                                             position: "absolute",
                                             width: "100%",
                                             height: "100%",
-                                            left: "38%",
-                                            top: "17%",
+                                            top: "14.5px",
+                                            right: "6px",
+                                            transform: "rotate(90deg)"
                                         }
-                                    }
+                                    },
+                                    transform: "rotate(-90deg)"
                                 }} 
                                 key={`switch-${index}`} 
                                 checked={state[`switch-${index}`] === "1"} 
