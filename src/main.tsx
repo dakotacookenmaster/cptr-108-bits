@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <ProgressStepper
       steps={data.map((datum, index) => {
-        return <BinaryQuestion key={`question-${index}`} data={datum} canMove={false} setCanMove={() => { }} />
+        return <BinaryQuestion key={`question-${index}`} displayHelp={false} setDisplayHelp={() => {}} data={datum} canMove={false} setCanMove={() => { }} />
       })} />
   }
 ])
@@ -25,7 +25,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         vertical: "top",
         horizontal: "center"
       }}
-      dense={true}
     >
       <RouterProvider router={router} />
     </SnackbarProvider>
