@@ -10,22 +10,25 @@ type ProgressMobileStepperProps = {
 }
 
 export default function ProgressMobileStepper(props: ProgressMobileStepperProps) {
-    const theme = useTheme();
-    const [activeStep, setActiveStep] = React.useState(0);
+    const theme = useTheme()
+    const [activeStep, setActiveStep] = React.useState(0)
     const [canMove, setCanMove] = React.useState(false)
+    const [displayHelp, setDisplayHelp] = React.useState(false)
 
     const handleNext = () => {
         setCanMove(false)
+        setDisplayHelp(false)
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
     };
 
     return (
         <>
             <h1 style={{textAlign: "center"}}>CPTR-108 Lab 3 Warmup - Binary Representation</h1>
-            { React.cloneElement(props.steps[activeStep], { setCanMove, canMove} )}
+            { React.cloneElement(props.steps[activeStep], { setCanMove, canMove, displayHelp, setDisplayHelp} )}
             <MobileStepper
                 steps={props.steps.length}
-                sx={{ background: "#3F3F3F", position: "absolute", bottom: "0px", width: "calc(100% - 16px)", overflow: "hidden" }}
+                sx={{ background: "#3F3F3F" }}
+                className="stepper"
                 position="static"
                 variant="dots"
                 activeStep={activeStep}
