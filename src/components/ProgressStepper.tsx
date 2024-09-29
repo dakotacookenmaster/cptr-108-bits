@@ -41,7 +41,7 @@ export default function ProgressMobileStepper(props: ProgressMobileStepperProps)
 
     return (
         <>
-            <h1 style={{ textAlign: "center" }}>CPTR-108 Lab 3 Warmup - Binary Representation</h1>
+            <h1 style={{ textAlign: "center" }}>CPTR-108 Lab 5 Warmup - Binary Representation</h1>
             {React.cloneElement(props.steps[activeStep], { setCanMove, canMove, displayHelp, setDisplayHelp })}
             <MobileStepper
                 steps={props.steps.length}
